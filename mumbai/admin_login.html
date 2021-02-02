@@ -1,0 +1,126 @@
+<!-- <
+session_start();
+?> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Admin</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #0e5792;
+  color: white;
+}
+.header h1 {
+  padding-top: 20px;
+  font-size: 40px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.navbar a.right {
+  float: right;
+}
+.navbar a:hover {
+  background-color: rgb(247, 29, 29);
+  color: black;
+}
+.button{
+  padding: 8px;
+  color: white;
+  background-color: rgb(38, 94, 214);
+  text-align: center;
+  outline: 0;
+  display: inline-block;
+  border-radius: 10px;
+  width: 6%;
+}
+.main {
+  -ms-flex: 70%;
+  flex: 70%;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  size: 40px;
+}
+.footer {
+  padding: 6px;
+  text-align: center;
+  background: #ddd;
+}
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+<script>
+  function validate(){
+  var username = document.getElementById("ad_name").value;
+  var password = document.getElementById("ad_pass").value;
+
+  if ( username == "admin" && password == "admin"){
+  alert ("Login successfully");
+  window.location = "dash.php"; //Redirecting to other page.
+  return false;
+  }
+  else{
+  alert("Please enter correct details");
+  }
+  }
+  </script>
+</head>
+<body>
+
+<div class="header">
+  <h1>Hospital Management System | Admin</h1>
+</div>
+
+<div class="navbar">
+  <a href="about_us.html" class="right">ABOUT US</a>
+  <a href="Registration.php" class="right">REGISTRATION</a>
+  <a href="home.html" class="right">HOME</a>
+
+</div>
+
+  <div class="main">
+    <h2>Welcome Admin</h2>
+   <br>
+    <form method="POST">
+    <b>Your ID</b>
+    <br>
+    <input style="width: 400px; height: 30px;" type = "text" name="name" id="ad_name" placeholder="Login ID">
+    <br><br>
+    <b>Password</b>
+    <br>
+    <input style="width: 400px; height: 30px;" type="password" name="pass" id="ad_pass" placeholder="Password">
+    <br><br>
+  <input type="button" class="button" value="Go" id="submit"onclick="validate()">
+</form>
+  </div>
+<div class="footer">
+  <h2>Hospital Management System Project</h2>
+  <p style="font-size: medium;">All rights reserved by respective Group members.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!-- ABOUT/CONTACT US -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us</title>
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(122, 36, 36, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 20px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: rgb(247, 29, 29);
+  color: black;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.footer {
+  padding: 6px;
+  text-align: center;
+  background: #ddd;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>Hospital Management System | About Us </h1>
+  <p>This project is a collaborative effort by the following members</p>
+</div>
+<div class="navbar">
+
+    <a href="admin_login.html" class="right">ADMIN</a>
+    <a href="Registration.php" class="right">REGISTRATION </a>
+    <a href="home.html" class="right">HOME</a>
+
+  </div>
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div  class="container">
+        <h2>Yashvardhan P Dwivedi</h2>
+        <p class="title">Member 1</p>
+
+        <label>EMAIL</label>
+        <p><button class="button">yashvardhanelex@gmail.com</button></p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Pawan Singh</h2>
+        <p class="title">Member 2</p>
+
+        <label>EMAIL</label>
+        <p ><button  class="button">pawansingh9769@gmail.com</button></p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Abhishek Singh</h2>
+        <p class="title">Member 3</p>
+
+        <label>EMAIL</label>
+        <p><button class="button">abhisinghraj000@gmail.com</button></p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Prathmesh Mishra</h2>
+        <p class="title">Member 4</p>
+
+        <label>EMAIL</label>
+        <p><button class="button">prathmesh.mishra40@gmail.com</button></p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+    <h2>Advance Database Management Project</h2>
+    <p style="font-size: medium;">All rights reserved by respective Group members.</p>
+  </div>
+</body>
+</html>
