@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Welcome</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #0e5792;
+  color: white;
+}
+.header h1 {
+  padding-top: 20px;
+  font-size: 40px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.navbar a.right {
+  float: right;
+}
+.navbar a:hover {
+  background-color: blueviolet;
+  color: rgb(255, 255, 255);
+}
+.button{
+  padding: 8px;
+  color: white;
+  background-color: rgb(38, 94, 214);
+  text-align: center;
+  outline: 0;
+  display: inline-block;
+  border-radius: 10px;
+  width: 11%;
+}
+.main {
+  display: block;
+   /* float:right;  */
+  -ms-flex: 70%;
+  flex: 70%;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  size: 40px;
+
+}
+.footer {
+  padding: 6px;
+  text-align: center;
+  background: #ddd;
+}
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Hospital Management System | Home</h1>
+</div>
+
+<div class="navbar">
+  <a href="about_us.html" class="right">ABOUT US</a>
+   <a href="Registration.php" class="right">EMERGENCY</a>
+  <!-- <a href="membership.php" class="right">MEMBERSHIP</a> -->
+
+
+</div>
+<!-- <div class="row"> -->
+  <div class="side">
+    <h4>IN CASE OF EMERGENCY, PLEASE SELECT "EMERGENCY" ON THE NAVIGATION TAB.</h4><hr>
+    <h2>WELCOME</h2>
+    <p>Welcome to The Domestic Hospital. Our services are in three cities namely Mumbai, Delhi and Kolkata</p><br>
+    <p>Please select your appropriate loaction and click on the respective button below</p><br> <br>
+
+  </div>
+<div class="main" >
+
+    <a class  = "button" value="Mumbai Division" href=".\mumbai\home.html" style="text-decoration: none;">Mumbai Division</a>
+    <a class  = "button" value="Delhi Division" href=".\delhi\home.html" style="text-decoration: none;">Delhi Division  </a>
+    <a class  = "button" value="Kolkata Division" href=".\kolkata\home.html" style="text-decoration: none;">Kolkata Division</a>
+
+</div>
+
+<div class="footer">
+  <h2>Advance Database Management Project</h2>
+  <p style="font-size: medium;">All rights reserved by respective Group members.</p>
+</div>
+</body>
+</html>
